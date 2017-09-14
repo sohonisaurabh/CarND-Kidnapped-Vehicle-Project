@@ -21,7 +21,7 @@ void ParticleFilter::init(double x, double y, double theta, double std[]) {
 
 	/*Number is particles are chosen in order to run the algorithm in almost real time and 
 	introduce lowest possible error in localization. This is a tunable parameter.*/
-	num_particles = 10;
+	num_particles = 20;
 	default_random_engine gen;
 	
 	normal_distribution<double> dist_x(x, std[0]);
