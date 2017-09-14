@@ -11,7 +11,7 @@ One way to localize a vehicle is by using data from Global Positioning System (G
 To achieve an accuracy of 3-10 cm, sensor information from Laser sensor (LIDAR) and/or Radial distance and angle sensor (RADAR) is used and fused together using a Particle Filter. This process is demonstrated in the following sections.
 
 
-## Localization Algorithm:
+## Localization Algorithm
 
 Localization in case of self driving vehicle makes use of GPS, range sensors, landmark information and a global map based on the following algorithm given below:
 
@@ -26,12 +26,12 @@ Localization in case of self driving vehicle makes use of GPS, range sensors, la
 The whole algorithm repeats at run time when the car is moving and new location of car is predicted.
 
 
-## Project Goal:
+## Project Goal
 
 In this project, a vehicle is kidnapped inside a closed environment and has no idea of its location. This environment is simulated in [Udacity's self driving car simulator](https://github.com/udacity/self-driving-car-sim/releases). The vehicle travels through the environment and takes roughly 2400 steps with change in orientation and position. The goal is to predict the location of vehicle using Particle Filter program implemented in C++. The error between ground truth location of robot and the predicted location should be minimal. Also, the program must be performant enough to run within 100 seconds while maintaining minimal error.
 
 
-## Project Implementation:
+## Project Implementation
 
 Each major step involved in implementation is illustrated below:
 
@@ -87,7 +87,7 @@ Particle filter algorithm uses particles to represent the location of vehicle. H
  8. Once initialization, prediction, update and resampling is implemented, the program is run under testing and error in the system along with run time is noted. To get the best estimate of vehicle's position in real time, the number of particles is tuned and finalized.
    
    
-## Project output:
+## Project Output
 
 Particle filter implemented was run on Udacity's simulator and its error and performance was noted. Below are the results with 10 and 20 particles respectively:
 
