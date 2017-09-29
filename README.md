@@ -102,7 +102,39 @@ Particle filter implemented was run on Udacity's simulator and its error and per
 In both the runs, implementation was declared as pass since the error and the execution time of code was in permissible limits.
 
 
-## Steps for building the project in Ubuntu
+## Steps for building the project
+
+### Dependencies
+
+* cmake >= 3.5
+ * All OSes: [click here for installation instructions](https://cmake.org/install/)
+ * Linux and Mac OS, you can also skip to installation of uWebSockets as it installs it as a dependency.
+ 
+* make >= 4.1(mac, linux), 3.81(Windows)
+  * Linux: make is installed by default on most Linux distros
+  * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
+  * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
+  * Linux and Mac OS, you can also skip to installation of uWebSockets as it installs it as a dependency.
+  
+* gcc/g++ >= 5.4
+  * Linux: gcc / g++ is installed by default on most Linux distros
+  * Mac: same deal as make - [install Xcode command line tools]((https://developer.apple.com/xcode/features/)
+  * Windows: recommend using [MinGW](http://www.mingw.org/)
+  * Linux and Mac OS, you can also skip to installation of uWebSockets as it installs it as a dependency.
+  
+* [uWebSockets](https://github.com/uWebSockets/uWebSockets)
+  * Run either `install-mac.sh` or `install-ubuntu.sh`. This will install cmake, make gcc/g++ too.
+  * If you install from source, checkout to commit `e94b6e1`, i.e.
+    ```
+    git clone https://github.com/uWebSockets/uWebSockets 
+    cd uWebSockets
+    git checkout e94b6e1
+    ```
+    Some function signatures have changed in v0.14.x.
+
+* Simulator. You can download these from the [Udacity simulator releases tab](https://github.com/udacity/self-driving-car-sim/releases).
+
+### Running the project in Ubuntu
 
   1. Execute every step from ./install-ubuntu.sh. This will install gcc, g++, cmake, make and uWebsocketIO API.
   
